@@ -1,5 +1,5 @@
-import React from 'react';
-import { ImageBackground, StyleSheet, View } from 'react-native';
+import React, { useState } from 'react';
+import { ImageBackground, StyleSheet, Text, View } from 'react-native';
 
 function WelcomeScreen(props) {
     return (
@@ -8,10 +8,11 @@ function WelcomeScreen(props) {
             source={require("../assets/Mind.jpg")}  
         >
             <View style={styles.loginButton}></View>
+            <View><Text>YouGotThis</Text></View>
         </ImageBackground>
            
     );
-}
+};
 
 const styles = StyleSheet.create({
     background: {
